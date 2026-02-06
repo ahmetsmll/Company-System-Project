@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+	<link rel="stylesheet" href="employees.css">
+
+</head>
+<body>
+
+<h1>Employee Management</h1>
+<a href="index.html">🏠 Back to Home Page </a>
+<br>
+<br>
+<br>
+<div class="form-container">
+	
+	<h2>Add Employee</h2>
+	<input type="hidden" id="employeeId">
+
+
+	<input class="min-salary" type="text" id="employeeName" placeholder="Employee Name">
+	<input class="min-salary" type="number" id="employeeSalary" placeholder="Salary" min="1000">
+	
+
+
+
+    <h4>Department:</h4>
+    <select id="employeeDepartmentSelect">
+        <option value="">Select Department</option>
+    </select>
+</div>
+
+<button onclick="saveEmployee()">Save</button>
+<button onclick="resetForm()">Cancel</button>
+
+
+
+<hr>
+<div class="filter-box">
+	<h3>Salary Filter</h3>
+
+	<input class ="min-salary" type="number" id="salaryFilterInput" placeholder="Minimum Salary" min="1000">
+	<button onclick="filterBySalary()">Filter</button>
+	<button class="private-btn" onclick="loadAllEmployees()">All Wiew</button>
+</div>
+<h2>Employee List</h2>
+<ul id="employeeList" class="employee-list"></ul>
+
+
+
+<script src="js/employees.js"></script>
+
+</body>
+</html>

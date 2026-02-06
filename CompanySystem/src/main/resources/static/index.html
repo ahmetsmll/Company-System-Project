@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="main-container">
+    <h1>Company Management System</h1>
+
+    <div class="card-container">
+        <div class="card" onclick="goToEmployees()">
+            <h2>Employee Management</h2>
+            <p>Employees add, update, delete and manage</p>
+        </div>
+
+        <div class="card" onclick="goToDepartments()">
+            <h2>Department Management</h2>
+            <p>Departments add, delete and view employees</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function goToEmployees() {
+        window.location.href = "employees.html";
+    }
+
+    function goToDepartments() {
+        window.location.href = "departments.html";
+    }
+</script>
+
+</body>
+</html>

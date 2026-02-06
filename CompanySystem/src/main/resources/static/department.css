@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(223, 223, 223);
+    margin: 0;
+    padding: 20px;
+	text-align: center;
+}
+
+h1, h3 {
+    color: #2c3e50;
+}
+h2{
+	color: rgb(211, 44, 44);
+
+}
+
+
+form, .form-container {
+    background-color: rgb(95, 115, 160);
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+	text-align: center;
+	
+	margin-left: 450px;
+	
+	
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 255);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: rgb(0, 128, 64);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:first-of-type {
+    background-color: rgb(0, 128, 0);
+    color: white;
+}
+
+button:nth-of-type(2) {
+    background-color: rgb(207, 88, 48);
+    color: white;
+}
+
+button:nth-of-type(3) {
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+}
+
+
+.filter-box {
+    background-color: rgb(0, 128, 128);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 350px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+	text-align: center;
+	margin-left: 480px;
+	
+}
+button.private-btn {
+	background-color: darkgray;
+	color: black;
+}
+
+input.min-salary {
+	background-color: blanchedalmond;
+	padding: 10px;
+	max-width: 280px;
+	border-radius: 8px;
+	
+}
+.employee-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+select{
+	background-color: blanchedalmond;
+		padding: 10px;
+		max-width: 280px;
+		border-radius: 8px;
+}
+a {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #0066cc;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+button.no-dept-btn {
+	background-color: #0066cc;
+}

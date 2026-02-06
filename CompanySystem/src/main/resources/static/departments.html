@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Departments</title>
+	<link rel="stylesheet" href="department.css">
+</head>
+<body>
+
+<h1>Department Management</h1>
+<a href="index.html">🏠Back To Home Page </a>
+<br>
+<br>
+<br>
+<h3>Add Department</h3>
+<input  class = "min-salary" type="text" id="departmentName" placeholder="Department Name">
+<button onclick="addDepartment()">Add</button>
+
+
+<hr>
+
+<h2>Department List</h2>
+<ul id="departmentList" class="employee-list"></ul>
+
+<button class="no-dept-btn" onclick="toggleNoDepartmentEmployees()">
+    No Department Wiew
+</button>
+
+
+
+<ul id="noDepartmentEmployeeList" style="display:none"></ul>
+
+
+
+
+<script src="js/departments.js"></script>
+
+</body>
+</html>
